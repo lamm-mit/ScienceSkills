@@ -9,6 +9,8 @@ Collection of scientific and engineering skills. As examples, you can run it thr
 - enables shell, code execution, and web search by default,
 - writes a local results package for every run.
 
+<img width="1046" height="533" alt="image" src="https://github.com/user-attachments/assets/720b8e0d-f77a-4327-9396-9c2acf1fb7cd" />
+
 ## Start mistral.rs
 
 The Skills runtime requires the shell executor. The easiest local mode is
