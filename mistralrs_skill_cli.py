@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Simple local mistral.rs Skill CLI.
 
-No OpenAI SDK and no OpenAI cloud API are used. This script talks directly to a
-local mistral.rs OpenAI-compatible server, defaulting to:
+This script talks directly to a local mistral.rs OpenAI-compatible server, defaulting to:
 
     http://localhost:1234/v1
     google/gemma-4-E4B-it
