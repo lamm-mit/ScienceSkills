@@ -28,8 +28,6 @@ This downloads a self-contained prebuilt binary for your platform (Metal on Appl
 
 [Manual installation, accelerator details & other platforms](https://ericlbuehler.github.io/mistral.rs/quickstart/)
 
-![Uploading mistralrs-quickstart.gif…]()
-
 
 ## Start mistral.rs
 
@@ -62,6 +60,9 @@ Check the server:
 ```bash
 curl http://localhost:1234/v1/models
 ```
+
+<img width="1280" height="680" alt="mistralrs-quickstart" src="https://github.com/user-attachments/assets/d0c5ee9c-e70f-4117-9207-0c69c46faf16" />
+
 
 ## Examples
 
