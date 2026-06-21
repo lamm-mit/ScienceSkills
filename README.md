@@ -11,12 +11,28 @@ Collection of scientific and engineering skills. As examples, you can run it thr
 
 <img width="1046" height="533" alt="image" src="https://github.com/user-attachments/assets/720b8e0d-f77a-4327-9396-9c2acf1fb7cd" />
 
+
+## Install mistral.rs
+
+**Linux/macOS:**
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/EricLBuehler/mistral.rs/master/install.sh | sh
+```
+
+**Windows (PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/EricLBuehler/mistral.rs/master/install.ps1 | iex
+```
+
+This downloads a self-contained prebuilt binary for your platform (Metal on Apple Silicon; per-GPU CUDA or CPU on Linux; CPU on Windows), falling back to a source build if none matches. No Rust or CUDA toolkit needed for the prebuilt path.
+
+[Manual installation, accelerator details & other platforms](https://ericlbuehler.github.io/mistral.rs/quickstart/)
+
 ## Start mistral.rs
 
-The Skills runtime requires the shell executor. The easiest local mode is
-`--agent`, which also enables code execution and web search.
+The Skills runtime requires the shell executor. The easiest local mode is `--agent`, which also enables code execution and web search.
 
-From this examples directory, a minimal single-model server is:
+A minimal single-model server is:
 
 ```bash
 mistralrs from-config -f models.toml
