@@ -28,6 +28,9 @@ This downloads a self-contained prebuilt binary for your platform (Metal on Appl
 
 [Manual installation, accelerator details & other platforms](https://ericlbuehler.github.io/mistral.rs/quickstart/)
 
+![Uploading mistralrs-quickstart.gif…]()
+
+
 ## Start mistral.rs
 
 The Skills runtime requires the shell executor. The easiest local mode is `--agent`, which also enables code execution and web search.
