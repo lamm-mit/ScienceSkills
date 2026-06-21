@@ -1,4 +1,4 @@
-# ScienceSkills
+# Science Skills
 
 Collection of scientific and engineering skills. As examples, you can run it through `mistralrs_skill_cli.py`. The CLI is intentionally simple:
 
@@ -71,6 +71,8 @@ Expected outputs:
 - `parameters.json`,
 - `README.md`.
 
+<img width="1260" height="648" alt="fracture_movie 6" src="https://github.com/user-attachments/assets/39d74a26-f228-42c7-8db0-966f114d9be3" />
+
 ### Beam Mechanics Plots And Deformation GIFs
 
 Use this for a compact, reliable mechanics artifact. The skill is dimensionless: no units, no YAML, no JSON input schema.  
@@ -99,6 +101,9 @@ Expected outputs:
 - `reactions.json`,
 - `manifest.json`,
 - `README.md`.
+
+<img width="960" height="384" alt="deformation 4" src="https://github.com/user-attachments/assets/1f1089ac-010c-45fb-aed6-881ee6af248b" />
+
 
 ### Hierarchical Topology Optimization Examples
 
@@ -143,6 +148,8 @@ Expected outputs:
 - optional `result_profile.stl`, `result_flat.stl`, or multimaterial STL files depending on `--mesh-mode`.
 - optional STL render directory with `turntable.gif`, `preview.png`, `frames/frame_*.png`, `render_manifest.json`, and `README.md`.
 
+<img width="1080" height="480" alt="density" src="https://github.com/user-attachments/assets/de443b0a-3010-49ed-93f0-d071744696d7" />
+
 ### Chladni Plate Resonance Examples
 
 Use this when you want visually compelling physics artifacts: nodal-line
@@ -158,3 +165,7 @@ Classic square Chladni figure:
   --require-tool \
   --query "Use chladni-plates to render a classic square Chladni plate resonance. Use preset classic-square, palette blue-sand, size 1080, 48 frames, and 18 fps. Keep all rendered images and GIF frames text-free. Save chladni_pattern.png, chladni_preview.png, chladni_animation.gif, frames, field_data.npz, parameters.json, caption.txt, and README. Verify files with find and report exact artifact paths plus preset, shape, modes, palette, frames, and fps from parameters.json."
 ```
+<img width="4615" height="1439" alt="small-chald" src="https://github.com/user-attachments/assets/1bb59a75-a803-4b85-96d0-b44e1368c777" />
+
+
+
