@@ -1,0 +1,68 @@
+run:
+  name: demo_cu_nvt
+  seed: 12345
+  device: auto          # auto | cpu | cuda | cuda:0
+  dtype: float32        # float32 for MD, float64 for relaxation/static if supported
+
+system:
+  source: ase_bulk      # file | ase_bulk
+  file: null
+  format: null
+  ase_bulk:
+    symbol: Cu
+    crystalstructure: fcc
+    a: 3.615
+    cubic: true
+    repeat: [4, 4, 4]
+  pbc: [true, true, true]
+
+model:
+  kind: lennard_jones   # lennard_jones | morse | mace
+  lennard_jones:
+    sigma: 2.315
+    epsilon: 0.167
+  morse:
+    sigma: 2.866
+    epsilon: 0.3429
+    alpha: 1.3588
+  mace:
+    foundation_model: small
+
+relax:
+  enabled: false
+  optimizer: fire
+  max_steps: 500
+  force_tolerance: 0.05
+  relax_cell: false
+
+md:
+  ensemble: nvt_langevin
+  temperature_K: 300
+  pressure_bar: null
+  timestep_ps: 0.001
+  n_steps: 1000
+  state_frequency: 50
+  scalar_frequency: 10
+  autobatcher: true
+
+output:
+  directory: runs/demo_cu_nvt
+  trajectory: trajectory.h5
+  final_structure: final.extxyz
+  summary: summary.json
+
+analysis:
+  discard_fraction: 0.2
+  rdf:
+    enabled: true
+    r_max: 8.0
+    bins: 200
+  msd:
+    enabled: true
+  export_xyz: true
+
+movie:
+  enabled: true
+  stride: 10
+  fps: 30
+  output: movie.mp4
